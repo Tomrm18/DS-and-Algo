@@ -8,6 +8,12 @@ function main() {
   myList.addToHead(0);
   myList.addToTail(2);
 
+  console.log("Before Reverse");
+  myList.print();
+
+  myList.reverseList();
+
+  console.log("After Reverse");
   myList.print();
 }
 
