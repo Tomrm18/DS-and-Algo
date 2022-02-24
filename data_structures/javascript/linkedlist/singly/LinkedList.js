@@ -52,8 +52,6 @@ module.exports = class LinkedList {
   }
 
   removeFromHead() {
-    let temp = this.getHead();
-
     this.setHead(this.getHead().getNext());
 
     if (this.getHead() == null) {
@@ -65,7 +63,7 @@ module.exports = class LinkedList {
     let temp = this.head;
 
     while (temp != null) {
-      if ((temp.next = this.tail)) {
+      if (temp.next == this.tail) {
         temp.next = null;
       }
 
